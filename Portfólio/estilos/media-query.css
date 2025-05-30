@@ -1,0 +1,66 @@
+@media screen and (min-width:500px) {
+    article.projeto-card h3{
+        font-size: 1.4rem;
+
+    }
+    
+    article.projeto-card div.box-text p{
+        font-size: 1.1rem;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    header h1{
+        font-size: 2.2rem;
+    }
+
+    header p{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    header span#burguer{
+        display: none;
+    }
+    
+    nav#item{
+        display: block;
+    }
+    
+    nav#item > ul{
+        background-color:  rgba(38, 0, 255, 0.479);
+        text-align: center;
+    }
+    
+    nav#item > ul > li{
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+    }
+
+    nav#item > ul > li > a{
+        color: white;
+    }
+
+
+    section#principal > article.projeto-card{
+        width: 550px;
+    }
+
+    article.projeto-card h3{
+        font-size: 1.6rem;
+
+    }
+
+    article.projeto-card div.box-text p{
+        font-size: 1.2rem;
+        width: 230px;
+        text-align: center;
+    }
+
+    section#principal > article.projeto-card{
+        padding-right:7px;
+        grid-template-columns: 2fr 4fr 2fr;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>João Vitor Pinto</h1>
+        <p>Desenvolvedor Web apaixonado por tecnologia</p>
+        <span id="burguer" onclick="clickMenu()" class="material-symbols-outlined">menu</span>
+    </header>
+    <nav id="item">
+        <ul>
+            <li><a href="https://www.instagram.com/joao_vip77/" target="_blank" rel="external">Instagram</a></li>
+            <li><a href="https://github.com/Joaovit77" target="_blank" rel="external">Git Hub</a></li>
+            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-pinto-1b93b0256/" target="_blank" rel="external">Linkedin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Projetos HTML 5 E CSS 3</h2>
+        <section id="principal">
+            <article class="projeto-card">
+                <h3>
+                    Projeto Cardápio
+                </h3>
+                <div class="box-text">
+                    <p>Este é um projeto de site de cardápio online, criado com foco em praticar HTML5, CSS3 e media queries para responsividade.</p>
+                    <p>O objetivo foi simular uma lanchonete fictícia chamada "Dog do Ciri", com um design simples, intuitivo e adaptado para dispositivos móveis</p>
+                </div>
+
+                <div class="card" id="card-1">
+                    <img src="imagem/cardapio.png" alt="cardapio" width="150px" height="250px">
+                </div>
+
+                <a class="botao" href="https://joaovit77.github.io/html-css/Projetos/Projeto%20Cardapio/index.html" target="_blank"><span class="material-symbols-outlined">link</span></a>
+
+            </article>
+            <article class="projeto-card">
+                <h3 style="text-indent: 9px;">
+                    Projeto Login
+                </h3>
+
+                <div class="box-text">
+                    <p>Este projeto é uma página de login responsiva, baseada no exemplo ensinado pelo professor Gustavo Guanabara.</p>
+                    <p>O principal objetivo foi aplicar os conceitos de HTML5 e CSS3, com foco em responsividade e design moderno.</p>
+                </div>
+
+                <div class="card" id="card-2">
+                    <img src="imagem/login.png" alt="Login" width="150px" height="250px">
+                </div>
+
+                <a class="botao" href="https://joaovit77.github.io/html-css/Projetos/Projeto-login/index.html" target="_blank"><span class="material-symbols-outlined">link</span></a>
+            </article>
+
+            <article class="projeto-card">
+                <h3>Projeto Cordel</h3>
+                <div class="box-text">
+                    <p>Este projeto é uma adaptação do famoso exercício proposto pelo professor Gustavo Guanabara, onde o desafio era criar uma página web com o estilo de um cordel literário. A estrutura da página foi cuidadosamente organizada com HTML5 e CSS3, mantendo o foco na estética típica do cordel.</p>
+                </div>
+
+                <div class="card" id="card-3">
+                    <img src="imagem/cordel.png" alt="Cordel" width="150px" height="250px">
+                </div>
+
+                <a class="botao" href="https://joaovit77.github.io/html-css/Projetos/projeto-cordel/index.html" target="_blank"><span class="material-symbols-outlined">link</span></a>
+
+            </article>
+            <article class="projeto-card">
+                <h3>Projeto Android</h3>
+                <div class="box-text">
+                    <p>Este projeto é uma página web simples, responsiva e bem estruturada, desenvolvida para apresentar uma breve história do mascote Android. A página foi criada utilizando HTML5 e CSS3, com foco na organização visual e na experiência do usuário.</p>
+                </div>
+
+                <div class="card" id="card-4">
+                    <img src="imagem/android.png" alt="cardapio" width="150px" height="250px">
+                </div>
+
+                <a class="botao" href="https://joaovit77.github.io/html-css/Projetos/projeto-android/android.html" target="_blank"><span class="material-symbols-outlined">link</span></a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site Desenvolvido pelo Dev João Vitor Pinto</p>
+    </footer>
+    <script>
+        function clickMenu(){
+            if (item.style.display == 'block'){
+                item.style.display = 'none'
+            } else {
+                item.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 600){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
