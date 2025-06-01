@@ -141,8 +141,7 @@ article.projeto-card img{
 
 article.projeto-card a.botao{
     background-color: rgb(38, 0, 255);
-    display: block;
-    margin-top: auto;
+    align-self: flex-end;
     width: 100%;
     text-align: center;
     color: black;
