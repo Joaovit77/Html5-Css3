@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu FlexBox</title>
+    <title>Menu Flexbox</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
-<body onresize="mudouTamanho()">
-    <header >
+<body>
+    <header>
         <h1>Meu Site</h1>
-        <span id="burguer" class="material-symbols-outlined">menu</span>
-        <nav id="itens">
-            
+        <nav>
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -23,34 +19,9 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Teste de FlexBox</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim minima earum corrupti deleniti aliquid possimus, distinctio quam et. Hic eligendi accusamus placeat iusto possimus suscipit adipisci blanditiis labore impedit voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti a velit eligendi, reiciendis, id, laborum dolor blanditiis necessitatibus fugit nobis laudantium debitis aliquam sequi distinctio sint voluptas unde fugiat dolores?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nisi libero. Nemo, laboriosam? Consequuntur veniam non repellat recusandae magni explicabo nemo corrupti tenetur! Magnam, praesentium nemo laudantium tenetur quod temporibus!</p>
-        </section>
+        <h2>Teste de FlexBox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et nesciunt autem a quos. Aliquam aperiam molestiae similique nisi earum aspernatur qui fugiat ea. Tempora quibusdam blanditiis adipisci alias a? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid atque veniam, iusto laudantium, delectus rerum voluptatem, natus eveniet inventore quae minima? Tempore sit minus eligendi vitae expedita quis porro harum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet laudantium ipsa ab modi, quas architecto in incidunt officia dolorum itaque rem nisi deleniti eaque aspernatur ducimus at, commodi doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat necessitatibus laudantium explicabo consectetur suscipit sit fuga odit impedit doloribus minima quae, harum tenetur fugit optio quod architecto deleniti facere temporibus!</p>
     </main>
-
-
-    <script>
-        let burguer = window.document.getElementById('burguer');
-        let item = document.getElementById('itens');
-        burguer.addEventListener('click' , clickMenu);
-        function clickMenu(){
-            if (item.style.display == 'flex'){
-                item.style.display = 'none'
-            } else {
-                item.style.display = 'flex'
-            }
-        }
-
-        function mudouTamanho() {
-        if (window.innerWidth > 580) {
-            item.style.display = 'flex';
-        } else {
-        item.style.display = 'none';
-        }
-}
-
-    </script>
 </body>
 </html>
